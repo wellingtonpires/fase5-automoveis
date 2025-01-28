@@ -20,7 +20,7 @@ spec:
         kompose.cmd: ./kompose convert
         kompose.version: 1.32.0 (765fde254)
       labels:
-        io.kompose.network/fase-4-sub-fase4automoveisnetwork: "true"
+        io.kompose.network/fase-4-sub-fase5automoveisnetwork: "true"
         io.kompose.service: postgres
     spec:
       containers:
@@ -28,7 +28,7 @@ spec:
             - name: POSTGRES_PASSWORD
               value: "123"
           image: postgres
-          name: dbfase4automoveis
+          name: dbfase5automoveis
           resources:
             requests:
               cpu: 100m

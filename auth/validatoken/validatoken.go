@@ -20,7 +20,7 @@ func OpenConnection() (*sql.DB, error) {
 	return db, err
 }
 
-var secretKey = []byte("fase4sub")
+var secretKey = []byte("fase5sub")
 
 func ValidaToken(tokenString string) bool {
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {

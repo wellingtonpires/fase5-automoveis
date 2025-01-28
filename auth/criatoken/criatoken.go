@@ -72,7 +72,7 @@ func consultaRole(login string, senha string) (role string, cpf string) {
 	return role, cpf
 }
 
-var secretKey = []byte("fase4sub")
+var secretKey = []byte("fase5sub")
 
 func CriaToken(c *gin.Context) {
 	role, cpf := consultaRole(c.Query("login"), c.Query("senha"))

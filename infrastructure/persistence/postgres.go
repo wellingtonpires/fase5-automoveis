@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	_ "github.com/lib/pq"
-	"github.com/wellingtonpires/fase4-automoveis/domain/entity/veiculo"
+	"github.com/wellingtonpires/fase5-automoveis/domain/entity/veiculo"
 )
 
 const conexaoAberta = "Conexao aberta com o banco!"

@@ -1,4 +1,4 @@
-module github.com/wellingtonpires/fase4-automoveis
+module github.com/wellingtonpires/fase5-automoveis
 
 go 1.21.3
 

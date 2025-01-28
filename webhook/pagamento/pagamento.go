@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/wellingtonpires/fase4-automoveis/domain/entity/veiculo"
-	"github.com/wellingtonpires/fase4-automoveis/infrastructure/persistence"
+	"github.com/wellingtonpires/fase5-automoveis/domain/entity/veiculo"
+	"github.com/wellingtonpires/fase5-automoveis/infrastructure/persistence"
 )
 
 func Pagamento(c *gin.Context) {
