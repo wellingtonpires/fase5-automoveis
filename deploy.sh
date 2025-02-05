@@ -25,3 +25,4 @@ kubectl apply -f fase5automoveis-deployment.yaml,fase5automoveis-service.yaml,po
 kubectl autoscale deployment vendas-fase5automoveis --cpu-percent=80 --min=1 --max=10
 kubectl autoscale deployment fase5automoveis --cpu-percent=80 --min=1 --max=10
 kubectl autoscale deployment postgres --cpu-percent=80 --min=1 --max=10
+

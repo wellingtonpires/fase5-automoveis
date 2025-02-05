@@ -26,8 +26,6 @@ spec:
           name: fase5automoveis
           ports:
             - containerPort: 8080
-              hostPort: 8080
-              protocol: TCP
           resources:
             requests:
               cpu: 900m

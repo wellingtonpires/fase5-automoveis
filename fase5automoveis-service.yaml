@@ -8,10 +8,9 @@ metadata:
     io.kompose.service: fase5automoveis
   name: fase5automoveis
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-    - name: "8080"
+    - protocol: TCP
       port: 8080
-      targetPort: 8080
   selector:
     io.kompose.service: fase5automoveis
