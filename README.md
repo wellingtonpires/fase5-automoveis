@@ -4,21 +4,15 @@
 
 ### SOBRE:
 
-Backend para uma plataforma para revenda de veículos, implementada utilizando Golang, Postgres e Kubernetes. Toda a parte de autenticação foi desenvolvida de forma customizada e separada das funcionalidades do negócio, implementada utilizando JWT.
-Nesta fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
+Backend para uma plataforma para revenda de veículos, implementada utilizando Golang, Postgres e Kubernetes. Toda a parte de autenticação foi desenvolvida de forma customizada e separada das funcionalidades do negócio, implementada utilizando JWT. Nesta fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
 
-### DEPLOY:
+**Caso deseje testar localmente, seguir o passo a passo abaixo:**
 
-**Pré requisitos:**\
+Pré requisitos:\
 Kubectl v1.29.0\
 Minikube v1.32.0\
 Go 1.21.3\
 Docker 24.0.6
-
-**Como implementar:**\
-Utilizar a collection do Postman deste repositório que aponta para a aplicação já implementada no OCI. (Sub Fase 5_FIAPCAR.postman_collection.json)
-
-Caso deseje testar localmente, seguir o passo a passo abaixo:
 
 Executar o script deploy_local.sh
 Ao executar o script, será deletado o cluster existente do Minikube e criado um novo, ajuste nas permissões do docker.sock, habilita o metrics-server, realiza o deploy da aplicação no cluster e configuração do HPA.
