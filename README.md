@@ -2,9 +2,11 @@
 
 # FASE 5 - FIAPCAR AUTOMÓVEIS
 
+
 ### SOBRE:
 
 Backend para uma plataforma para revenda de veículos, implementada utilizando Golang, Postgres e Kubernetes. Toda a parte de autenticação foi desenvolvida de forma customizada e separada das funcionalidades do negócio, implementada utilizando JWT. Nesta fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
+
 
 ### COMO TESTAR:
 
@@ -15,6 +17,7 @@ Para utilizar as APIs, é necessário cadastrar um usuário na API '/usuario/cad
 Para testar as APIs, é necessário informar o token gerado no campo 'Authorization'. 
 
 Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.
+
 
 **CASO QUEIRA TESTAR EM AMBIENTE LOCAL, REALIZAR O DEPLOYMENT:**
 
