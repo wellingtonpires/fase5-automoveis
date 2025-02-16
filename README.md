@@ -16,6 +16,7 @@ Para testar as APIs, é necessário informar o token gerado no campo 'Authorizat
 
 Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.
 
+\
 **CASO QUEIRA TESTAR EM AMBIENTE LOCAL, REALIZAR O DEPLOYMENT:**
 
 Pré requisitos:\
