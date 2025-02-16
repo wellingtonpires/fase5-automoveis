@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "a8864a12-f922-424e-b289-c1e91013f9b8",
+		"name": "Sub Fase 5 - Venda de veículos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30665392"
+	},
+	"item": [
+		{
+			"name": "Cadastro Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"usuarioteste\",\r\n    \"senha\": \"senha123\",\r\n    \"email\": \"teste@teste.com\",\r\n    \"cpf\": \"12345678901\",\r\n    \"admin\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/caduser/usuario/cadastra-usuario",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"caduser",
+						"usuario",
+						"cadastra-usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cria Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/usertoken/usuario/cria-token?login=usuarioteste&senha=senha123",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"usertoken",
+						"usuario",
+						"cria-token"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "usuarioteste"
+						},
+						{
+							"key": "senha",
+							"value": "senha123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczOTU5NjE5Miwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.GzimO-gmuumIAUj9k07Vx4C23wgrU1xCdQcmkRcfZiQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/vcheckout/veiculo/checkout",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"vcheckout",
+						"veiculo",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastro Veículo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczOTU5NjE5Miwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.GzimO-gmuumIAUj9k07Vx4C23wgrU1xCdQcmkRcfZiQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"Volkswagen\",\r\n    \"modelo\": \"Gol\",\r\n    \"ano\": \"2012\",\r\n    \"cor\": \"Azul\",\r\n    \"flagvendido\": false,\r\n    \"preco\": 12000,\r\n    \"pagamento\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/cadveiculo/veiculo/cadastra-veiculo",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"cadveiculo",
+						"veiculo",
+						"cadastra-veiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Veículos",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczOTU5NjE5Miwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.GzimO-gmuumIAUj9k07Vx4C23wgrU1xCdQcmkRcfZiQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"Celta\",\r\n    \"ano\": \"2012\",\r\n    \"cor\": \"Verde\",\r\n    \"preco\": 35000,\r\n    \"flagvendido\": false,\r\n    \"id\": 14\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/updateveiculo/veiculo/atualiza-veiculo",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"updateveiculo",
+						"veiculo",
+						"atualiza-veiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Webhook Pagamento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjYyODg3NDcsInJvbGUiOiJhZG1pbiIsInVzZXJuYW1lIjoidXN1YXJpb3Rlc3RlIn0.GFdE_YkoA8Dr6wH6jC7D7MsqVMvf_3yGEzQ2wy-2eCM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"pagamento\": true,\r\n    \"pagamentodesc\": \"Pagamento processado com sucesso\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/pag/webhook/pagamento",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"pag",
+						"webhook",
+						"pagamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Veículos",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczOTU5NjE5Miwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.GzimO-gmuumIAUj9k07Vx4C23wgrU1xCdQcmkRcfZiQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/delveiculo/veiculo/exclui-veiculo",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"delveiculo",
+						"veiculo",
+						"exclui-veiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Veículos Por Preço",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczMDk0MDAxMSwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.0-77sb6EFRqkS8nSlCRaHGilFvs68vL8r1u9hjouzX4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/getval/veiculo/consulta-por-preco",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"getval",
+						"veiculo",
+						"consulta-por-preco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Veículos Vendidos",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjM0NTY3ODkwMSIsImV4cCI6MTczOTU5NjE5Miwicm9sZSI6ImFkbWluIiwidXNlcm5hbWUiOiJ1c3VhcmlvdGVzdGUifQ.GzimO-gmuumIAUj9k07Vx4C23wgrU1xCdQcmkRcfZiQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://otaeujfasxzrodx7mkrta3vjku.apigateway.sa-saopaulo-1.oci.customer-oci.com/sold/veiculo/vendidos",
+					"protocol": "https",
+					"host": [
+						"otaeujfasxzrodx7mkrta3vjku",
+						"apigateway",
+						"sa-saopaulo-1",
+						"oci",
+						"customer-oci",
+						"com"
+					],
+					"path": [
+						"sold",
+						"veiculo",
+						"vendidos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
