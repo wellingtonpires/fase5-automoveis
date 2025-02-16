@@ -6,7 +6,17 @@
 
 Backend para uma plataforma para revenda de veículos, implementada utilizando Golang, Postgres e Kubernetes. Toda a parte de autenticação foi desenvolvida de forma customizada e separada das funcionalidades do negócio, implementada utilizando JWT. Nesta fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
 
-**Caso deseje testar localmente, seguir o passo a passo abaixo:**
+### COMO TESTAR:
+
+Importar o arquivo 'Sub Fase 5_FIAPCAR.postman_collection.json' para o Postman.
+
+Para utilizar as APIs, é necessário cadastrar um usuário na API '/usuario/cadastra-usuario' e em seguida gerar um token jwt utilizando a API '/usuario/cria-token?login=LOGINUSUARIO&senha=SENHAUSUARIO', preenchendo o login e senha com os dados do usuário criado anteriormente.
+
+Para testar as APIs, é necessário informar o token gerado no campo 'Authorization'. 
+
+Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.
+
+**CASO QUEIRA TESTAR EM AMBIENTE LOCAL, REALIZAR O DEPLOYMENT:**
 
 Pré requisitos:\
 Kubectl v1.29.0\
@@ -19,15 +29,7 @@ Ao executar o script, será deletado o cluster existente do Minikube e criado um
 
 Importante aguardar alguns minutos para conclusão da criação dos pods antes de testar.
 
-**Comando para acompanhar o status da implantação:**\
+Comando para acompanhar o status da implantação:\
 watch minikube kubectl get pods
 
-### COMO TESTAR:
 
-Importar o arquivo 'Sub Fase 5_FIAPCAR.postman_collection.json' para o Postman.
-
-Para utilizar as APIs, é necessário cadastrar um usuário na API '/usuario/cadastra-usuario' e em seguida gerar um token jwt utilizando a API '/usuario/cria-token?login=LOGINUSUARIO&senha=SENHAUSUARIO', preenchendo o login e senha com os dados do usuário criado anteriormente.
-
-Para testar as APIs, é necessário informar o token gerado no campo 'Authorization'. 
-
-Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.
