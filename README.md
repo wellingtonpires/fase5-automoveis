@@ -14,8 +14,9 @@ Para utilizar as APIs, é necessário cadastrar um usuário na API '/usuario/cad
 
 Para testar as APIs, é necessário informar o token gerado no campo 'Authorization'. 
 
-Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.\\
-
+Apenas usuários criados com a flag "admin = true" tem permissão para utilizar APIs de cadastro, atualização, deleção e consulta de veículos vendidos.
+\
+\
 **CASO QUEIRA TESTAR EM AMBIENTE LOCAL, REALIZAR O DEPLOYMENT:**
 
 Pré requisitos:\
