@@ -18,12 +18,12 @@ Docker 24.0.6
 **Como implementar:**\
 Utilizar a collection do Postman deste repositório que aponta para a aplicação já implementada no OCI. (Sub Fase 5 - Venda de veículos.postman_collection)
 
-_Caso deseje testar localmente, seguir o passo a passo abaixo:
+Caso deseje testar localmente, seguir o passo a passo abaixo:
 
 Executar o script deploy.sh
 Ao executar o script, será deletado o cluster existente do Minikube e criado um novo, ajuste nas permissões do docker.sock, habilita o metrics-server, realiza o deploy da aplicação no cluster e configuração do HPA.
 
-Importante aguardar alguns minutos para conclusão da criação dos pods antes de testar._
+Importante aguardar alguns minutos para conclusão da criação dos pods antes de testar.
 
 **Comando para acompanhar o status da implantação:**\
 watch minikube kubectl get pods
