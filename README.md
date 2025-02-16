@@ -5,7 +5,7 @@
 ### SOBRE:
 
 Backend para uma plataforma para revenda de veículos, implementada utilizando Golang, Postgres e Kubernetes. Toda a parte de autenticação foi desenvolvida de forma customizada e separada das funcionalidades do negócio, implementada utilizando JWT.
-Neste fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
+Nesta fase, o serviço foi migrado para a nuvem Oracle Cloud Infrastructure (OCI).
 
 ### DEPLOY:
 
