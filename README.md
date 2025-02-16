@@ -16,7 +16,7 @@ Go 1.21.3\
 Docker 24.0.6
 
 **Como implementar:**\
-Utilizar a collection do Postman deste repositório que aponta para a aplicação já implementada no OCI. (Sub Fase 5 - Venda de veículos.postman_collection)
+Utilizar a collection do Postman deste repositório que aponta para a aplicação já implementada no OCI. (Sub Fase 5_FIAPCAR.postman_collection.json)
 
 Caso deseje testar localmente, seguir o passo a passo abaixo:
 
@@ -30,7 +30,7 @@ watch minikube kubectl get pods
 
 ### COMO TESTAR:
 
-Importar o arquivo 'Sub Fase 5 - Venda de veículos.postman_collection' para o Postman.
+Importar o arquivo 'Sub Fase 5_FIAPCAR.postman_collection.json' para o Postman.
 
 Para utilizar as APIs, é necessário cadastrar um usuário na API '/usuario/cadastra-usuario' e em seguida gerar um token jwt utilizando a API '/usuario/cria-token?login=LOGINUSUARIO&senha=SENHAUSUARIO', preenchendo o login e senha com os dados do usuário criado anteriormente.
 
